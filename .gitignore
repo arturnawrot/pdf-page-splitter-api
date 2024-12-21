@@ -1,0 +1,4 @@
+trash/
+.pytest_cache
+__pycache__
+uploaded_files/*
