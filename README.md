@@ -26,8 +26,8 @@ docker run -it --rm pdf_splitter pytest tests/
 ## Example Usage
 
 ### Using cURL
-```bash
 Send a POST request with the PDF URL:
+```bash
 curl -X POST http://127.0.0.1/split-pdf \
 -H "Content-Type: application/json" \
 -d '{
