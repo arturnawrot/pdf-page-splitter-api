@@ -45,8 +45,9 @@ def split_pdf():
     if not url:
         return "No URL provided", 400
     
-    if not is_pdf(url):
-        return "Given URL does not end with .pdf format", 400
+    # Please note that even if a URL does not end with .pdf, it can still link to a PDF file.
+    # if not is_pdf(url):
+    #     return "Given URL does not end with .pdf format", 400
 
     content, status = fetch_pdf(url)
     if status != 200:
